@@ -1,4 +1,5 @@
-db.Series.insertMany([
+use serials
+db.docs.insertMany([
 {
 	"title" : "Побег",
 	"country" : "Россия",
@@ -13,7 +14,7 @@ db.Series.insertMany([
 {
 	"title" : "Игра престолов",
 	"country" : "США",
-	"genre" : ["Фентези", "Драма"],
+	"genre" : "Фентези",
 	"ageLimits" : "16", //int
 	"startDate" : new Date("2009-05-18"), //date
 	"releaseDate" : new Date("2011-05-18"), //date
@@ -23,7 +24,7 @@ db.Series.insertMany([
 },
 {
 	"title" : "Шерлок",
-	"country" : ["Великобритания", "США"],
+	"country" : "Великобритания",
 	"genre" : "Детектив",
 	"ageLimits" : "12", //int
 	"startDate" : new Date("2008-05-18"), //date

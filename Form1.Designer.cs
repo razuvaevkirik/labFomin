@@ -53,6 +53,7 @@
             this.AddSeries.TabIndex = 1;
             this.AddSeries.Text = "Добавить сериал";
             this.AddSeries.UseVisualStyleBackColor = true;
+            this.AddSeries.Click += new System.EventHandler(this.AddSeries_Click);
             // 
             // SearchButton
             // 

@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Driver;
 using MongoDB.Bson;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Bson;
-using Newtonsoft.Json.Linq;
 
 namespace lab2
 {
@@ -41,7 +38,7 @@ namespace lab2
             mainForm.Show();
         }
 
-        class Serial
+        public class Serial
         {
             public ObjectId _id { get; set; }
             public string title { get; set; }
